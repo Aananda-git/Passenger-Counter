@@ -1,3 +1,13 @@
+/* font name  Inter  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Inter, system-ui;
+}
+
 body {
     background-image: url("bodyBg.jpg");
     background-size: auto;
@@ -6,12 +16,27 @@ body {
     text-align: center;
 }
 
-.container{
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     background-color: rgb(170, 122, 221);
-    max-width: 50%;
+    width: 60%;
+    height: 40vh;
+    padding: 2vw;
     margin: auto;
     border: 2px solid black;
     border-radius: 12px;
+    text-align: center;
 }
 
 h1 {
@@ -34,6 +59,7 @@ button {
     width: 200px;
     margin-bottom: 5px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #increment-btn {
@@ -44,3 +70,13 @@ button {
     background: rgb(44, 3, 35);
 }
 
+@media only screen and (max-width: 550px) {
+    .container{
+        height: 100vh;
+        width: 100%;
+        border: none;
+        border-radius: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+}
